@@ -565,7 +565,7 @@
       <column caption='ProductName' datatype='string' name='[Bush Somerset Collection Bookcase]' role='dimension' type='nominal' />
       <column caption='OrderID' datatype='string' name='[CA-2016-152156]' role='dimension' type='nominal' />
       <column caption='Yearly growth (YoY growth)' datatype='real' name='[Calculation_1401675023488434176]' role='measure' type='quantitative'>
-        <calculation class='tableau' formula='if [F7 (shipment.csv)] = 2014&#10;then Y0 = SUM(sales)&#10;elseif [F6 (shipment.csv)] = 2015&#10;then Y1 = SUM(sales)&#10;elseif [F6 (shipment.csv)] = 2016&#10;then Y2 = SUM(sales)&#10;elseif &#10;then Y3 = SUM(sales)&#10;END' />
+        <calculation class='tableau' formula='if [F7 (shipment.csv)] = 2014&#10;then Y0 = SUM(sales)&#10;elseif [F6 (shipment.csv)] = 2015&#10;then Y1 = SUM(sales)&#10;elseif [F6 (shipment.csv)] = 2016&#10;then Y2 = SUM(sales)&#10;elseif [F7 (shipment.csv)] = 2017&#10; THEN Y3 = SUM(sales)&#10;END' />
       </column>
       <column caption='Discount Y/N' datatype='integer' name='[Calculation_317292674540359680]' role='measure' type='quantitative'>
         <calculation class='tableau' formula='if [F6 (sales.csv)]&gt;0 &#10;THEN 1 //discount applied&#10;ELSE 0 // no discount&#10;END' />
@@ -3591,8 +3591,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='16' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='15' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='18' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='17' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
                 <zone fixed-size='280' h='49000' id='8' is-fixed='true' name='sales top prod in sub-category' w='82400' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -3641,8 +3641,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='6' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='84000' id='5' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+            <zone h='100000' id='8' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='7' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
               <zone-style>
                 <format attr='border-color' value='#000000' />
                 <format attr='border-style' value='none' />
